@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .login-background {
+    background-image: url('/login-background-01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
+  }
+}
+
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  z-index: 1000;
+  background-color: #548dfa;
+  box-shadow: 0 0 2px #548dfa;
+}
+
+#nprogress .peg {
+  display: block;
+  position: absolute;
+  right: 0;
+  width: 100px;
+  height: 100%;
+  box-shadow: 0 0 10px #548dfa, 0 0 5px #548dfa;
+  transform: rotate(3deg) translate(0px, -4px);
+  opacity: 1;
+}
